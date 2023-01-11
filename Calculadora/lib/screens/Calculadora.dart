@@ -33,33 +33,37 @@ class CalculadoraState extends State<Calculadora> {
               style: TextStyle(fontSize: 24),
             ),
             ElevatedButton(
-                onPressed: () =>
-                    somaNumeros(_controladorNumero1, _controladorNumero2),
+                onPressed: () => somaNumeros(
+                    _controladorNumero1.text, _controladorNumero2.text),
                 child: Text("Soma dois numeros")),
             ElevatedButton(
-                onPressed: () =>
-                    subtraiNumeros(_controladorNumero1, _controladorNumero2),
+                onPressed: () => subtraiNumeros(
+                    _controladorNumero1.text, _controladorNumero2.text),
                 child: Text("subtrai dois numeros")),
             ElevatedButton(
-                onPressed: () =>
-                    multiplicaNumeros(_controladorNumero1, _controladorNumero2),
+                onPressed: () => multiplicaNumeros(
+                    _controladorNumero1.text, _controladorNumero2.text),
                 child: Text("Multiplica dois numeros")),
             ElevatedButton(
-                onPressed: () =>
-                    divideNumeros(_controladorNumero1, _controladorNumero2),
+                onPressed: () => divideNumeros(
+                    _controladorNumero1.text, _controladorNumero2.text),
                 child: Text("divide dois numeros")),
             ElevatedButton(
-                onPressed: () => mediaTresNumeros(_controladorNumero1,
-                    _controladorNumero2, _controladorNumero3),
+                onPressed: () => mediaTresNumeros(_controladorNumero1.text,
+                    _controladorNumero2.text, _controladorNumero3.text),
                 child: Text("media de tres numeros")),
             ElevatedButton(
-                onPressed: () => maiorTresNumeros(_controladorNumero1,
-                    _controladorNumero2, _controladorNumero3),
+                onPressed: () => maiorTresNumeros(_controladorNumero1.text,
+                    _controladorNumero2.text, _controladorNumero3.text),
                 child: Text("maior entre os Tres")),
             ElevatedButton(
-                onPressed: () => menorTresNumeros(_controladorNumero1,
-                    _controladorNumero2, _controladorNumero3),
+                onPressed: () => menorTresNumeros(_controladorNumero1.text,
+                    _controladorNumero2.text, _controladorNumero3.text),
                 child: Text("menor entre os Tres")),
+            Text(
+              "Desenvolvido por Bruno Fontoura",
+              style: TextStyle(fontSize: 24),
+            ),
           ],
         ),
       ),
